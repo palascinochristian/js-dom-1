@@ -19,9 +19,9 @@ main{
     height: 100vh;
     flex-direction: column;
 }
-#bulb{
+/* #bulb{
     margin-left: 2.1875rem;
-}
+} */
 .btn-on-off{
     padding: .625rem;
     border: .125rem solid #000;
