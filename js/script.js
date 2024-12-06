@@ -5,6 +5,7 @@
 const bulbElm = document.getElementById("bulb"); 
 const switchBtnElm = document.querySelector(".btn-on-off");
 const bodyElm = document.querySelector("body");
+const alertElm = document.querySelector(".night-alert")
 
 /* ----------
   FUNCTIONS
@@ -27,3 +28,17 @@ switchBtnElm.addEventListener('click', function () {
     }
     isBulbOn = !isBulbOn; //Cambio di volta in volta lo stato della lampadina
 });
+
+/// BONUS PER ESERCITARMI
+
+// Dalle 19 alle 24, lo sfondo diventa buio e appare un messaggio che ti consiglia di accendere la luce
+const backgroundTimeChange = () => {
+    const time = new Date().getHours(); 
+    if(time >= 19 &&  time <= 24){
+        bodyElm.style.backgroundColor ="#000";
+        alertElm.classList.remove("hidden");
+    } else {
+        bodyElm.style.backgroundColor ="";
+    }
+}
+backgroundTimeChange();

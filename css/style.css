@@ -12,25 +12,33 @@ body {
     background-color: #909095;
 }
 
-main{
+main {
     display: flex;
-    justify-content:  center;
+    justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
 }
+
 /* #bulb{
     margin-left: 2.1875rem;
 } */
-.btn-on-off{
+.btn-on-off {
     padding: .625rem;
     border: .125rem solid #000;
     cursor: pointer;
     font-size: 1.25rem;
 }
 
-.btn-on-off:hover{
+.btn-on-off:hover {
     background-color: beige;
 }
 
+.night-alert p {
+    font-size: 2.5rem;
+    color: #fff;
+}
 
+.hidden{
+    display: none;
+}
