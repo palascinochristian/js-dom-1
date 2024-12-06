@@ -1,9 +1,21 @@
 /* ---------
    RESET
 -----------*/
-*{
+* {
     box-sizing: border-box;
     padding: 0;
-    margin:0;
+    margin: 0;
 }
+
+body {
+    background-color: #909095;
+}
+
+main{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    height: 100vh;
+}
+
 
